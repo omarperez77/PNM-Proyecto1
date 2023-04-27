@@ -1,0 +1,209 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:gravity="right|center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:foregroundTint="#EC0505"
+        android:gravity="center_horizontal"
+        android:text="TextView"
+        android:textColor="#009688"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        tools:text="USUARIOS" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableLayout
+                    android:layout_width="411dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="2sp"
+                    android:layout_marginVertical="50dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/button5"
+                    tools:ignore="MissingConstraints">
+
+                    <!-- Cabecera de la tabla -->
+                    <TableRow>
+
+                        <TextView
+                            android:backgroundTint="#009688"
+                            android:backgroundTintMode="src_in"
+                            android:drawableTint="#FFFFFF"
+                            android:foregroundTint="#000000"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="Usuarios"
+                            android:textColor="#3F51B5"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:backgroundTint="#009688"
+                            android:backgroundTintMode="src_in"
+                            android:drawableTint="#FFFFFF"
+                            android:foregroundTint="#000000"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="Nombre"
+                            android:textColor="#3F51B5"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:backgroundTint="#009688"
+                            android:backgroundTintMode="src_in"
+                            android:drawableTint="#FFFFFF"
+                            android:foregroundTint="#000000"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="Rol"
+                            android:textColor="#3F51B5"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:backgroundTint="#009688"
+                            android:backgroundTintMode="src_in"
+                            android:drawableTint="#FFFFFF"
+                            android:foregroundTint="#000000"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="Acciones"
+                            android:textColor="#3F51B5"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <!-- Filas de la tabla -->
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/txtUsuario"
+                            android:padding="10dp"
+                            android:text="usuario1"
+                            android:textColor="#2196F3"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txtNombre"
+                            android:padding="10dp"
+                            android:text="Nombre1"
+                            android:textColor="#2196F3"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txtRol"
+                            android:padding="10dp"
+                            android:text="Admin"
+                            android:textColor="#2196F3"
+                            android:textStyle="bold"
+                            tools:text="cocinero" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:scrollbarSize="24dp">
+
+                            <Button
+                                android:layout_width="74dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:text="Editar"
+                                android:textSize="10sp" />
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="20dp"
+                                android:backgroundTint="#FA0808"
+                                android:text="Eliminar"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:padding="10dp"
+                            android:text="usuario2"
+                            android:textColor="#2196F3"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:padding="10dp"
+                            android:text="Nombre2"
+                            android:textColor="#2196F3"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:padding="10dp"
+                            android:text="Admin"
+                            android:textColor="#2196F3"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:layout_width="75dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:text="Editar"
+                                android:textSize="10sp" />
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="20dp"
+                                android:backgroundTint="#FA0808"
+                                android:text="Eliminar"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+                    </TableRow>
+
+                    <!-- Añade más filas según sea necesario -->
+
+                </TableLayout>
+
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#009688"
+                    android:text="Nuevo +"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

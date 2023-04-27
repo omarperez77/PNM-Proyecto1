@@ -2,6 +2,7 @@ package edu.tecmm.bytebuilders.foodservice;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+<<<<<<< HEAD
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -10,12 +11,16 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
+=======
+import android.os.Bundle;
+>>>>>>> 52b66d5e45ea24eb2fef92a6b7054aa3e297dd54
 
 public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+<<<<<<< HEAD
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
         // Agregar animaciones
@@ -43,3 +48,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
 }
+=======
+        setContentView(R.layout.activity_main);
+    }
+}
+>>>>>>> 52b66d5e45ea24eb2fef92a6b7054aa3e297dd54
