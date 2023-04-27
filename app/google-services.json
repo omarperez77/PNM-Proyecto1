@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "621728949849",
+    "project_id": "foodservice-c63f6",
+    "storage_bucket": "foodservice-c63f6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:621728949849:android:3ab7a2b6ac34047495b348",
+        "android_client_info": {
+          "package_name": "edu.tecmm.bytebuilders.foodservice"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "621728949849-6lvgdf399m94csdhahia699udob7bp08.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxu5nss_tA9ydTQYWe5CGqiQtDuhtlkpI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "621728949849-6lvgdf399m94csdhahia699udob7bp08.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

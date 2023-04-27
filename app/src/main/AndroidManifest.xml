@@ -12,8 +12,12 @@
         android:theme="@style/Theme.Foodservice"
         tools:targetApi="31">
         <activity
+            android:name=".VerUsuarioActivity"
+            android:exported="false" />
+        <activity
             android:name=".VerBebidaActivity"
-            android:exported="false" >
+            android:exported="false">
+
             <!-- PARA REGRESAR A LA PAGINA PRINCIPAL -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -21,7 +25,8 @@
         </activity>
         <activity
             android:name=".NewBebidaActivity"
-            android:exported="false" >
+            android:exported="false">
+
             <!-- PARA REGRESAR A LA PAGINA PRINCIPAL -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -29,7 +34,8 @@
         </activity>
         <activity
             android:name=".VerPlatilloActivity"
-            android:exported="false" >
+            android:exported="false">
+
             <!-- PARA REGRESAR A LA PAGINA PRINCIPAL -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -47,6 +53,7 @@
         <activity
             android:name=".NewPlatilloActivity"
             android:exported="false">
+
             <!-- PARA REGRESAR A LA PAGINA PRINCIPAL -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -65,7 +72,7 @@
             android:name=".PanelAdmin"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".RegistrationActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
