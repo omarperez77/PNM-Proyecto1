@@ -7,6 +7,9 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+<<<<<<< HEAD
     <color name="color_launch">#ef5350</color>
 
+=======
+>>>>>>> 438aec8a6bbea04ed3ac832a16be7a60706876d6
 </resources>
