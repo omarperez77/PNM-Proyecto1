@@ -19,11 +19,12 @@ import android.os.Bundle;
 >>>>>>> 438aec8a6bbea04ed3ac832a16be7a60706876d6
 >>>>>>> camarena
 
-public class MainActivity extends AppCompatActivity {
+public class ActivityLogin extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+<<<<<<< HEAD:app/src/main/java/edu/tecmm/bytebuilders/foodservice/MainActivity.java
 <<<<<<< HEAD
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
@@ -54,6 +55,9 @@ public class MainActivity extends AppCompatActivity {
 }
 =======
         setContentView(R.layout.activity_main);
+=======
+        setContentView(R.layout.activity_login);
+>>>>>>> dev-manuel:app/src/main/java/edu/tecmm/bytebuilders/foodservice/ActivityLogin.java
     }
 }
 <<<<<<< HEAD

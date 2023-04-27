@@ -15,6 +15,7 @@
         <activity
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             android:name=".LoginActivity"
             android:exported="false" />
         <activity
@@ -98,10 +99,18 @@
         <activity
             android:name=".RegistrationActivity"
 >>>>>>> Dev-Alejandra
+=======
+            android:name=".ActivityLogin"
+>>>>>>> dev-manuel
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
 
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+
+<<<<<<< HEAD
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -111,6 +120,8 @@
             android:name=".MainActivity"
             android:exported="true"></activity>
 >>>>>>> 52b66d5e45ea24eb2fef92a6b7054aa3e297dd54
+=======
+>>>>>>> dev-manuel
     </application>
 
 </manifest>

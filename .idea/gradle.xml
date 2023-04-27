@@ -2,6 +2,7 @@
 <project version="4">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   <component name="GradleMigrationSettings" migrationVersion="1" />
 =======
 <<<<<<< HEAD
@@ -12,6 +13,9 @@
 =======
   <component name="GradleMigrationSettings" migrationVersion="1" />
 >>>>>>> Dev-Alejandra
+=======
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+>>>>>>> dev-manuel
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
