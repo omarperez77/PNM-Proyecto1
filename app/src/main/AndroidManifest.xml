@@ -13,9 +13,18 @@
 <<<<<<< HEAD
         tools:targetApi="31">
         <activity
+<<<<<<< HEAD
             android:name=".LoginActivity"
             android:exported="false" />
         <activity
+=======
+<<<<<<< HEAD
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+=======
+>>>>>>> 438aec8a6bbea04ed3ac832a16be7a60706876d6
+>>>>>>> camarena
             android:name=".MainActivity"
 =======
         tools:targetApi="33">

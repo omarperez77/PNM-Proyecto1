@@ -13,7 +13,11 @@ import android.widget.ImageView;
 import android.widget.TextView;
 =======
 import android.os.Bundle;
+<<<<<<< HEAD
 >>>>>>> 52b66d5e45ea24eb2fef92a6b7054aa3e297dd54
+=======
+>>>>>>> 438aec8a6bbea04ed3ac832a16be7a60706876d6
+>>>>>>> camarena
 
 public class MainActivity extends AppCompatActivity {
 
@@ -52,4 +56,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 }
+<<<<<<< HEAD
 >>>>>>> 52b66d5e45ea24eb2fef92a6b7054aa3e297dd54
+=======
+>>>>>>> 438aec8a6bbea04ed3ac832a16be7a60706876d6
+>>>>>>> camarena

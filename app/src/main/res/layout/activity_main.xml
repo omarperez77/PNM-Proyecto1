@@ -9,8 +9,8 @@
 <<<<<<< HEAD
     <ImageView
         android:id="@+id/logoImagenView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="304dp"
+        android:layout_height="312dp"
         android:layout_marginStart="100dp"
         android:layout_marginTop="80dp"
         android:layout_marginEnd="100dp"
@@ -27,13 +27,15 @@
         android:id="@+id/codeliaTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="30dp"
-        android:fontFamily="@font/arbutus"
+        android:layout_marginBottom="28dp"
+        android:fontFamily="casual"
         android:text="TACOS"
-        android:textColor="@color/color_launch"
+        android:textColor="@color/design_default_color_error"
         android:textSize="50sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.463"
         app:layout_constraintStart_toStartOf="parent" />
 =======
     <TextView
@@ -45,5 +47,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+<<<<<<< HEAD
 >>>>>>> 52b66d5e45ea24eb2fef92a6b7054aa3e297dd54
+=======
+>>>>>>> 438aec8a6bbea04ed3ac832a16be7a60706876d6
+>>>>>>> camarena
 </androidx.constraintlayout.widget.ConstraintLayout>
