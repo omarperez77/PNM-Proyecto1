@@ -10,118 +10,94 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.Foodservice"
-<<<<<<< HEAD
         tools:targetApi="31">
+
         <activity
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
             android:name=".LoginActivity"
             android:exported="false" />
-        <activity
-=======
-<<<<<<< HEAD
-            android:name=".LoginActivity"
-            android:exported="false" />
-        <activity
-=======
->>>>>>> 438aec8a6bbea04ed3ac832a16be7a60706876d6
->>>>>>> camarena
-            android:name=".MainActivity"
-=======
-        tools:targetApi="33">
+
         <activity
             android:name=".AdminPageInicio"
             android:exported="false" />
+
         <activity
             android:name=".AdminPageRegister"
->>>>>>> 52b66d5e45ea24eb2fef92a6b7054aa3e297dd54
-=======
+            android:exported="false" />
+
+        <activity
             android:name=".VerUsuarioActivity"
             android:exported="false" />
+
         <activity
             android:name=".VerBebidaActivity"
             android:exported="false">
-
-            <!-- PARA REGRESAR A LA PAGINA PRINCIPAL -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".BebidasActivity" />
         </activity>
+
         <activity
             android:name=".NewBebidaActivity"
             android:exported="false">
-
-            <!-- PARA REGRESAR A LA PAGINA PRINCIPAL -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".BebidasActivity" />
         </activity>
+
         <activity
             android:name=".VerPlatilloActivity"
             android:exported="false">
-
-            <!-- PARA REGRESAR A LA PAGINA PRINCIPAL -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".PlatillosActivity" />
         </activity>
+
         <activity
             android:name=".PlatillosActivity"
             android:exported="false" />
+
         <activity
             android:name=".EmpleadosActivity"
             android:exported="false" />
+
         <activity
             android:name=".BebidasActivity"
             android:exported="false" />
+
         <activity
             android:name=".NewPlatilloActivity"
             android:exported="false">
-
-            <!-- PARA REGRESAR A LA PAGINA PRINCIPAL -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".PlatillosActivity" />
         </activity>
+
         <activity
             android:name=".AyudaActivity"
             android:exported="false">
-
-            <!-- PARA REGRESAR A LA PAGINA PRINCIPAL -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".PanelAdmin" />
         </activity>
+
         <activity
             android:name=".PanelAdmin"
             android:exported="false" />
+
         <activity
             android:name=".RegistrationActivity"
->>>>>>> Dev-Alejandra
-=======
-            android:name=".ActivityLogin"
->>>>>>> dev-manuel
+            android:exported="false"/>
+
+        <activity
+            android:name=".MainActivity"
             android:exported="true">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
-    </activity>
-
-<<<<<<< HEAD
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-<<<<<<< HEAD
-=======
-        <activity
-            android:name=".MainActivity"
-            android:exported="true"></activity>
->>>>>>> 52b66d5e45ea24eb2fef92a6b7054aa3e297dd54
-=======
->>>>>>> dev-manuel
+
     </application>
 
 </manifest>

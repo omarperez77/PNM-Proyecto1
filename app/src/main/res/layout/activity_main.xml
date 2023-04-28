@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-<<<<<<< HEAD
     <ImageView
         android:id="@+id/logoImagenView"
         android:layout_width="304dp"
@@ -37,7 +36,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.463"
         app:layout_constraintStart_toStartOf="parent" />
-=======
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -47,9 +46,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-<<<<<<< HEAD
->>>>>>> 52b66d5e45ea24eb2fef92a6b7054aa3e297dd54
-=======
->>>>>>> 438aec8a6bbea04ed3ac832a16be7a60706876d6
->>>>>>> camarena
+
 </androidx.constraintlayout.widget.ConstraintLayout>

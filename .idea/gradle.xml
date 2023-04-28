@@ -1,35 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  <component name="GradleMigrationSettings" migrationVersion="1" />
-=======
-<<<<<<< HEAD
-  <component name="GradleMigrationSettings" migrationVersion="1" />
-=======
->>>>>>> 438aec8a6bbea04ed3ac832a16be7a60706876d6
->>>>>>> camarena
-=======
-  <component name="GradleMigrationSettings" migrationVersion="1" />
->>>>>>> Dev-Alejandra
-=======
-  <component name="GradleMigrationSettings" migrationVersion="1" />
->>>>>>> dev-manuel
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
         <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-        <option name="gradleJvm" value="Embedded JDK" />
->>>>>>> 52b66d5e45ea24eb2fef92a6b7054aa3e297dd54
-=======
-        <option name="gradleJvm" value="Embedded JDK" />
->>>>>>> Dev-Alejandra
+        <option name="gradleJvm" value="jbr-11" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
