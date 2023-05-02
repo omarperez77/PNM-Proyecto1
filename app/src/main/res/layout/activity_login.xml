@@ -46,6 +46,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:backgroundTint="#06A306"
+        android:onClick="enviar"
         android:paddingLeft="15dip"
         android:paddingRight="15dip"
         android:text="ingresar"
