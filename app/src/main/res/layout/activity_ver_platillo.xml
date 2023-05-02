@@ -28,7 +28,7 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName4"
         app:layout_constraintTop_toBottomOf="@+id/editTextTipoPlatillos5"
-        app:srcCompat="@drawable/tacos" />
+        app:srcCompat="@drawable/tacos2" />
 
     <EditText
         android:id="@+id/editTextTipoPlatillos5"
