@@ -18,6 +18,7 @@ Button btn;
 
 
     public void nuevo(){
+        //ir al crud
         Intent i = new Intent(this,AdminPageRegister.class);
         startActivity(i);
     }
