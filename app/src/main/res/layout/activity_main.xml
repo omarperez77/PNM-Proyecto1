@@ -6,8 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-<<<<<<< Updated upstream
-=======
+
     <ImageView
         android:id="@+id/logoImagenView"
         android:layout_width="304dp"
