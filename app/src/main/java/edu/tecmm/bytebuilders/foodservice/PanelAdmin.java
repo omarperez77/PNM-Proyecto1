@@ -9,8 +9,13 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
+import java.sql.*;
+import java.sql.*;
 
 public class PanelAdmin extends AppCompatActivity {
+    Conexion con;
+    Connection bd;
+    int ban;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +23,9 @@ public class PanelAdmin extends AppCompatActivity {
         setContentView(R.layout.activity_panel_admin);
         /*getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setIcon(R.drawable.logo);*/
+        con = new Conexion();
+        //bd = con.getConexion();
+
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu){

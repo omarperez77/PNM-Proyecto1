@@ -8,7 +8,10 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
+import java.sql.Connection;
+
 public class VerBebidaActivity extends AppCompatActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +20,7 @@ public class VerBebidaActivity extends AppCompatActivity {
         //Poner el icono en el action Bar
         /*getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setIcon(R.mipmap.icon_launcher);*/
+
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu){
