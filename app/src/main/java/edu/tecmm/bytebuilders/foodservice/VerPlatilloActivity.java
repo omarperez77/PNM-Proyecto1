@@ -16,7 +16,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class VerPlatilloActivity extends AppCompatActivity {
-   //TextView
+   TextView nomPlatillo, ingredientes, precio, caliente, actDes;
     Conexion con;
     Connection bd;
     int ban;
@@ -28,7 +28,12 @@ public class VerPlatilloActivity extends AppCompatActivity {
         //Poner el icono en el action Bar
         /*getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setIcon(R.mipmap.icon_launcher);*/
-        //  =findViewById()
+        nomPlatillo =findViewById(R.id.txtNomPlatillo);
+        ingredientes =findViewById(R.id.txtIngredientes);
+        precio =findViewById(R.id.txtPrecio);
+        caliente =findViewById(R.id.txtCaliente);
+        actDes =findViewById(R.id.txtActDes);
+
         con = new Conexion();
         //bd = con.getConexion();
         llenarDepartamentos();

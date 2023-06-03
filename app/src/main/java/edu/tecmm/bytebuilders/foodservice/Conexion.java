@@ -7,10 +7,13 @@ import java.sql.*;
 
 public class Conexion {
 
-    private Connection con;
+    private Connection connection;
 
     public Conexion() {
         new Async().execute();
+    }
+    public Connection getConexion() {
+        return connection;
     }
 
     class Async extends AsyncTask<Void, Void, Void> {
@@ -19,10 +22,11 @@ public class Conexion {
         protected Void doInBackground(Void... voids) {
             try {
                 Class.forName("com.mysql.jdbc.Driver");
-                Connection connection = DriverManager.getConnection("jdbc:mysql://sql9.freesqldatabase.com/sql9621802", "sql9621802", "yhM3ulC4DX");
+                 connection = DriverManager.getConnection("jdbc:mysql://sql9.freesqldatabase.com/sql9621802", "sql9621802", "yhM3ulC4DX");
                 System.out.println("Conexion establecida en doInBackground "+connection);
-                Statement statement = connection.createStatement();
-                ResultSet resultSet = statement.executeQuery("SELECT * FROM cursos");
+               Statement statement = connection.createStatement();
+                ResultSet resultSet = statement.executeQuery("SELECT * FROM platillo");
+                System.out.println("===========================>>>> "+resultSet);
                 while (resultSet.next()) {
                     records += resultSet.getString(1) + " " + resultSet.getString(2) + "\n";
                 }
@@ -33,7 +37,7 @@ public class Conexion {
         }
         @Override
         protected void onPostExecute(Void aVoid) {
-            System.out.println("---------------->    " + records);
+            System.out.println("-------1--------->    " + records);
             //tv1.setText(records);
             if (error != "")
                 System.out.println("--------------Error-----------------> " + error);
