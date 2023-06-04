@@ -7,8 +7,19 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.TextView;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 
 public class VerPlatilloActivity extends AppCompatActivity {
+   //TextView
+    Conexion con;
+    Connection bd;
+    int ban;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,7 +28,47 @@ public class VerPlatilloActivity extends AppCompatActivity {
         //Poner el icono en el action Bar
         /*getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setIcon(R.mipmap.icon_launcher);*/
+        //  =findViewById()
+        con = new Conexion();
+        //bd = con.getConexion();
+        llenarDepartamentos();
+        ban = 0;
     }
+
+    private void llenarDepartamentos() {
+        PreparedStatement ps = null;
+        ResultSet rs = null;
+
+        try {
+            ps = bd.prepareStatement("SELECT * FROM departamento");
+            rs = ps.executeQuery();
+
+            while (rs.next()) {
+                //Llenar el combo
+                String depto = rs.getString("nombreDepto");
+               // comboDepartamentos.addItem(depto);
+            }
+        } catch (SQLException ex) {
+            System.out.println("Excepción = " + ex.getMessage());
+        }
+    }
+    private void btnActualizar(View view){
+        ban=2;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu){
         MenuInflater inflater = getMenuInflater();

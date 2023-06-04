@@ -26,7 +26,7 @@
         android:layout_marginEnd="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName4"
+        app:layout_constraintStart_toEndOf="@+id/txtNomPlatillo"
         app:layout_constraintTop_toBottomOf="@+id/editTextTipoPlatillos5"
         app:srcCompat="@drawable/tacos2" />
 
@@ -53,7 +53,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName4"
+        android:id="@+id/txtNomPlatillo"
         android:layout_width="184dp"
         android:layout_height="46dp"
         android:layout_marginStart="30dp"
@@ -66,7 +66,7 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextTipoPlatillos5" />
 
     <EditText
-        android:id="@+id/editTextTextMultiLine3"
+        android:id="@+id/txtIngredientes"
         android:layout_width="189dp"
         android:layout_height="113dp"
         android:layout_marginStart="30dp"
@@ -77,10 +77,10 @@
         android:inputType="textMultiLine"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4" />
+        app:layout_constraintTop_toBottomOf="@+id/txtNomPlatillo" />
 
     <EditText
-        android:id="@+id/editTextNumber3"
+        android:id="@+id/txtPrecio"
         android:layout_width="102dp"
         android:layout_height="49dp"
         android:layout_marginStart="8dp"
@@ -91,11 +91,11 @@
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/editTextTextMultiLine3"
+        app:layout_constraintStart_toEndOf="@+id/txtIngredientes"
         app:layout_constraintTop_toBottomOf="@+id/logo3" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName5"
+        android:id="@+id/txtCaliente"
         android:layout_width="313dp"
         android:layout_height="44dp"
         android:layout_marginTop="32dp"
@@ -104,10 +104,10 @@
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber3" />
+        app:layout_constraintTop_toBottomOf="@+id/txtPrecio" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName6"
+        android:id="@+id/txtActDes"
         android:layout_width="313dp"
         android:layout_height="44dp"
         android:layout_marginTop="32dp"
@@ -116,7 +116,7 @@
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5" />
+        app:layout_constraintTop_toBottomOf="@+id/txtCaliente" />
 
     <Button
         android:id="@+id/button4"
