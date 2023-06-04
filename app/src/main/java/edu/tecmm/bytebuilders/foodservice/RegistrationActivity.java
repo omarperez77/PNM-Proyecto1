@@ -25,6 +25,7 @@ public class RegistrationActivity extends AppCompatActivity {
         password = findViewById(R.id.txtPassword);
         db = FirebaseDatabase.getInstance().getReference();
     }
+
     public void listUsuarios(View view){
         Intent intent = new Intent(this, VerUsuarioActivity.class);
         startActivity(intent);

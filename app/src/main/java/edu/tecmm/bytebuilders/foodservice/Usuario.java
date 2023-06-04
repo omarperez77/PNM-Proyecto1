@@ -4,6 +4,7 @@ public class Usuario {
     private String userName;
     private String userEmail;
     private String userPassword;
+    private String userNamer;
 
     public Usuario(){
 
@@ -12,6 +13,13 @@ public class Usuario {
         userName=name;
         userEmail=email;
         userPassword=password;
+
+    }
+    public Usuario(String name, String email, String password,String username){
+        userName=name;
+        userEmail=email;
+        userPassword=password;
+        userNamer = username;
     }
 
     public String getUserName() {
@@ -21,7 +29,13 @@ public class Usuario {
     public void setUserName(String userName) {
         this.userName = userName;
     }
+    public String getUserNamer() {
+        return userNamer;
+    }
 
+    public void setUserNamer(String username) {
+        this.userNamer = userName;
+    }
     public String getUserEmail() {
         return userEmail;
     }
