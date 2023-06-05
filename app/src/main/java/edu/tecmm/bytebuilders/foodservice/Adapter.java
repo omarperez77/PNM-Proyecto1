@@ -31,7 +31,7 @@ public class Adapter extends ArrayAdapter<Platillos> {
          txtPrecio = view.findViewById(R.id.txtPrecioP);
 
         txtNombre.setText(arrayplatillos.get(position).getNombre());
-        txtPrecio.setText(arrayplatillos.get(position).getPrecio());
+        txtPrecio.setText("$ "+arrayplatillos.get(position).getIngredientes()+".00");
         return view;
     }
 }

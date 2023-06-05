@@ -3,17 +3,20 @@ package edu.tecmm.bytebuilders.foodservice;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 
 public class VerPlatilloActivity extends AppCompatActivity {
    TextView nomPlatillo, ingredientes, precio, caliente, actDes;
@@ -34,31 +37,51 @@ public class VerPlatilloActivity extends AppCompatActivity {
         caliente =findViewById(R.id.txtCaliente);
         actDes =findViewById(R.id.txtActDes);
 
-        con = new Conexion();
-        //bd = con.getConexion();
-        llenarDepartamentos();
-        ban = 0;
+
     }
 
-    private void llenarDepartamentos() {
-        PreparedStatement ps = null;
-        ResultSet rs = null;
+    //consulta
+    class Async extends AsyncTask<Void, Void, Void> {
+        String records = "", error = "";
+        @Override
+        protected Void doInBackground(Void... voids) {
+            PreparedStatement ps=null;
+            ResultSet rs = null;
+            System.out.println("-----------aqui pasa----------------  ----------------------");
 
-        try {
-            ps = bd.prepareStatement("SELECT * FROM departamento");
-            rs = ps.executeQuery();
+            try {
+                con.getConexion();
+                System.out.println("2 Conexion establecida en doInBackground "+con);
+                Platillos platillos = new Platillos();
+                String resultSet = ("SELECT * FROM platillo WHERE  id="+platillos.id);
+                ps=con.getConexion().prepareStatement(resultSet);
+                System.out.println("///////////////////////////////////////");
+                System.out.println(ps);
+                System.out.println("///////////////////////////////////////");
+                //aqui van los datos de los campos que tiene la vista
+                int registro = ps.executeUpdate();
 
-            while (rs.next()) {
-                //Llenar el combo
-                String depto = rs.getString("nombreDepto");
-               // comboDepartamentos.addItem(depto);
+
+                if (registro>0){
+                    Toast.makeText(VerPlatilloActivity.this, "Registro de platillo correcto", Toast.LENGTH_SHORT).show();
+                }
+
+
+            } catch (Exception e) {
+                System.out.println("-----------Error del query para insertar datos en la base de datos ----------------  ----------------------");
             }
-        } catch (SQLException ex) {
-            System.out.println("Excepción = " + ex.getMessage());
+            return null;
         }
-    }
-    private void btnActualizar(View view){
-        ban=2;
+
+        @Override
+        protected void onPostExecute(Void aVoid) {
+            System.out.println("-------1--------->    " + records);
+            //tv1.setText(records);
+            if (error != "")
+                System.out.println("--------------Error-----------------> " + error);
+            //tv1.setText(error);
+            super.onPostExecute(aVoid);
+        }
     }
 
 

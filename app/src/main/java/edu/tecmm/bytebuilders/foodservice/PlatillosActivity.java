@@ -32,7 +32,7 @@ public class PlatillosActivity extends AppCompatActivity {
     ListView listView;
     Adapter adapter;
     public static ArrayList<Platillos>platillosArrayList= new ArrayList<>();
-    String url="SELECT * FROM platillos";
+    //String url="SELECT * FROM platillos";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -80,43 +80,42 @@ public class PlatillosActivity extends AppCompatActivity {
 
     }
     class Async extends AsyncTask<Void, Void, Void> {
+
         String records = "", error = "";
+        int id;
+        String nombre ="",ingredientes="",precio ="",temperatura ="",estado ="",imagen ="";
+        Platillos platillos;
         @Override
         protected Void doInBackground(Void... voids) {
-            System.out.println("-----------aqui pasa----------------  ----------------------");
-
             try {
                 con.getConexion();
-                System.out.println("2 Conexion establecida en doInBackground "+con);
-                Statement statement =  con.getConexion().createStatement();
+                System.out.println("2Conexion establecida en doInBackground "+con);
+               Statement statement = con.getConexion().createStatement();
                 ResultSet resultSet = statement.executeQuery("SELECT * FROM platillo");
-                System.out.println("RESULT ============>> "+resultSet);
+                System.out.println("===========================>>>> "+resultSet);
                 while (resultSet.next()) {
-                    System.out.println(resultSet.next()+" ----------------------------");
                     records += resultSet.getString(1) + " " + resultSet.getString(2) + "\n";
-                    int id =resultSet.getInt(1);
-                    String nombre =resultSet.getString(2);
-                    String ingredientes =resultSet.getString(3);
-                    String precio = resultSet.getString(4);
-                    String temperatura = resultSet.getString(5);
-                    String estado = resultSet.getString(6);
-                    String imagen = resultSet.getString(7);
+                    id = resultSet.getInt(1);
+                    nombre = resultSet.getString(2);
+                    ingredientes = resultSet.getString(3);
+                    precio = resultSet.getString(4);
+                    temperatura = resultSet.getString(5);
+                    estado = resultSet.getString(6);
+                    imagen = resultSet.getString(7);
                     System.out.println("///////////////nombre//////////////////-> "+nombre);
-                    Platillos platillos = new Platillos(id, nombre, precio, ingredientes, temperatura, estado, imagen);
-                    System.out.println("///////////////platillos//////////////////-> "+platillos);
+                    platillos = new Platillos(id, nombre, precio, ingredientes, temperatura, estado, imagen);
+                    System.out.println("///////////////platillos//////////////////-> "+precio);
                     platillosArrayList.add(platillos);
-                    System.out.println("=========================>>>"+ platillosArrayList.size());
-                    adapter.notifyDataSetChanged();
                 }
             } catch (Exception e) {
-                System.out.println("-----------Error de consulta----------------  ----------------------");
+                error = e.toString();
             }
             return null;
         }
-
         @Override
         protected void onPostExecute(Void aVoid) {
             System.out.println("-------1--------->    " + records);
+            adapter.notifyDataSetChanged();
             //tv1.setText(records);
             if (error != "")
                 System.out.println("--------------Error-----------------> " + error);
@@ -124,6 +123,7 @@ public class PlatillosActivity extends AppCompatActivity {
             super.onPostExecute(aVoid);
         }
     }
+
 
 
     @Override
@@ -145,7 +145,11 @@ public class PlatillosActivity extends AppCompatActivity {
                 return super.onOptionsItemSelected(item);
         }
     }
-    public void nuevoPlatillo(View view){
+    public void verPlatillo(View view){
+        Intent intent = new Intent(this, VerPlatilloActivity.class);
+        startActivity(intent);
+    }
+    public void NuevoPlatillo(View view){
         Intent intent = new Intent(this, NewPlatilloActivity.class);
         startActivity(intent);
     }

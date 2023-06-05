@@ -6,6 +6,7 @@
     <item
         android:id="@+id/inicio"
         android:icon="@mipmap/icon_inicio"
+        android:iconTint="#FFFEFE"
         android:title="Admin"
         app:showAsAction="ifRoom" />
 

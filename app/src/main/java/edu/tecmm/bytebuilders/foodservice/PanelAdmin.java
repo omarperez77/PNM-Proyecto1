@@ -40,6 +40,8 @@ public class PanelAdmin extends AppCompatActivity {
 
             case R.id.cerrarsecion:
                 Toast.makeText(this,"Cerrando sesión...",Toast.LENGTH_SHORT).show();
+                intent =new Intent(this,LoginActivity.class);
+                startActivity(intent);
                 return true;
 
             case R.id.Ayuda:

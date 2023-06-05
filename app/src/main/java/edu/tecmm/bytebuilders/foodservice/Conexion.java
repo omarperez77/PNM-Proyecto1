@@ -22,14 +22,14 @@ public class Conexion {
         protected Void doInBackground(Void... voids) {
             try {
                 Class.forName("com.mysql.jdbc.Driver");
-                 connection = DriverManager.getConnection("jdbc:mysql://sql9.freesqldatabase.com/sql9621802", "sql9621802", "yhM3ulC4DX");
+                 connection = DriverManager.getConnection("jdbc:mysql://sql9.freesqldatabase.com/sql9623537", "sql9623537", "phbJtsT9Up");
                 System.out.println("Conexion establecida en doInBackground "+connection);
-               Statement statement = connection.createStatement();
+               /*Statement statement = connection.createStatement();
                 ResultSet resultSet = statement.executeQuery("SELECT * FROM platillo");
                 System.out.println("===========================>>>> "+resultSet);
                 while (resultSet.next()) {
                     records += resultSet.getString(1) + " " + resultSet.getString(2) + "\n";
-                }
+                }*/
             } catch (Exception e) {
                 error = e.toString();
             }
@@ -37,7 +37,7 @@ public class Conexion {
         }
         @Override
         protected void onPostExecute(Void aVoid) {
-            System.out.println("-------1--------->    " + records);
+            //System.out.println("-------1--------->    " + records);
             //tv1.setText(records);
             if (error != "")
                 System.out.println("--------------Error-----------------> " + error);

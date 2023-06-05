@@ -18,7 +18,7 @@
         app:srcCompat="@drawable/logo" />
 
     <ImageView
-        android:id="@+id/logo3"
+        android:id="@+id/imgPlatillo"
         android:layout_width="126dp"
         android:layout_height="116dp"
         android:layout_marginStart="8dp"
@@ -27,11 +27,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/txtNomPlatillo"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTipoPlatillos5"
+        app:layout_constraintTop_toBottomOf="@+id/txtIdPlatillo"
         app:srcCompat="@drawable/tacos2" />
 
     <EditText
-        android:id="@+id/editTextTipoPlatillos5"
+        android:id="@+id/txtIdPlatillo"
         android:layout_width="231dp"
         android:layout_height="59dp"
         android:layout_marginStart="5dp"
@@ -63,7 +63,7 @@
         android:inputType="textPersonName"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTipoPlatillos5" />
+        app:layout_constraintTop_toBottomOf="@+id/txtIdPlatillo" />
 
     <EditText
         android:id="@+id/txtIngredientes"
@@ -92,7 +92,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/txtIngredientes"
-        app:layout_constraintTop_toBottomOf="@+id/logo3" />
+        app:layout_constraintTop_toBottomOf="@+id/imgPlatillo" />
 
     <EditText
         android:id="@+id/txtCaliente"
